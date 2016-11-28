@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07986A2A1DECBAAF00C6D439 /* HistorialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07986A291DECBAAF00C6D439 /* HistorialCell.swift */; };
+		07A5A2401DCBB0CA00A8B196 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5A23F1DCBB0CA00A8B196 /* ProfileViewController.swift */; };
+		07A5A2441DCBECEE00A8B196 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A5A2431DCBECEE00A8B196 /* UserViewController.swift */; };
+		07D2971A1DE78C87008A6652 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07D297191DE78C87008A6652 /* GoogleService-Info.plist */; };
+		07D83BB03C989572C55E0DA9 /* Pods_App_Medica.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD96EB8A0391C724C16B0C49 /* Pods_App_Medica.framework */; };
+		4347B80E1DDA960B00DE670C /* BarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347B80D1DDA960B00DE670C /* BarChartViewController.swift */; };
+		FB138E4E1DB9461800AC275B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB138E4D1DB9461800AC275B /* AppDelegate.swift */; };
+		FB138E501DB9461800AC275B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB138E4F1DB9461800AC275B /* ViewController.swift */; };
+		FB138E531DB9461800AC275B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB138E511DB9461800AC275B /* Main.storyboard */; };
+		FB138E551DB9461800AC275B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB138E541DB9461800AC275B /* Assets.xcassets */; };
+		FB138E581DB9461800AC275B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB138E561DB9461800AC275B /* LaunchScreen.storyboard */; };
+		FB138E601DB951D900AC275B /* StaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB138E5F1DB951D900AC275B /* StaticTableViewController.swift */; };
+		FB138E621DB9550600AC275B /* HoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB138E611DB9550600AC275B /* HoraViewController.swift */; };
+		FB138E641DB960A700AC275B /* FotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB138E631DB960A700AC275B /* FotosViewController.swift */; };
+		FB138E661DB9841A00AC275B /* MedicinasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB138E651DB9841A00AC275B /* MedicinasTableViewController.swift */; };
+		FB138E681DB9844600AC275B /* Medicinas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB138E671DB9844600AC275B /* Medicinas.swift */; };
+		FB138E6A1DB987C600AC275B /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB138E691DB987C600AC275B /* MyCell.swift */; };
+		FB6DB0201DCAA9A800325319 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6DB01F1DCAA9A800325319 /* DetailViewController.swift */; };
+		FB6DB0251DCAB52800325319 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6DB0241DCAB52800325319 /* SWRevealViewController.m */; };
+		FB716EFC1DDBBC360092F4F0 /* CreditosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB716EFB1DDBBC360092F4F0 /* CreditosViewController.swift */; };
+		FB7EF0A91DE7BB8900B661C6 /* Paciente.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7EF0A81DE7BB8900B661C6 /* Paciente.swift */; };
+		FB88C2D21DCBC51C0090419B /* GraphicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88C2D11DCBC51C0090419B /* GraphicsViewController.swift */; };
+		FB88C2D61DCBD75E0090419B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB88C2D51DCBD75E0090419B /* RegisterViewController.swift */; };
+		FBA967BF1DE51AFB00D33FD0 /* DoctorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA967BE1DE51AFB00D33FD0 /* DoctorViewController.swift */; };
+		FBA967C31DE5205100D33FD0 /* ResponsableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA967C21DE5205100D33FD0 /* ResponsableViewController.swift */; };
+		FBC9E1D71DDBAE15008FA844 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBC9E1D21DDBAE0A008FA844 /* Charts.framework */; };
+		FBC9E1D81DDBAE15008FA844 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FBC9E1D21DDBAE0A008FA844 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FBE3EBB11DCBF38400FF6095 /* TableViewControllerUserInfromation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE3EBB01DCBF38400FF6095 /* TableViewControllerUserInfromation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBC9E1D11DDBAE0A008FA844 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC9E1CB1DDBAE09008FA844 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		FBC9E1D31DDBAE0A008FA844 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC9E1CB1DDBAE09008FA844 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		FBC9E1D51DDBAE0A008FA844 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC9E1CB1DDBAE09008FA844 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		FBC9E1D91DDBAE15008FA844 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBC9E1CB1DDBAE09008FA844 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4347B80C1DDA94D200DE670C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FBC9E1D81DDBAE15008FA844 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07986A291DECBAAF00C6D439 /* HistorialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorialCell.swift; sourceTree = "<group>"; };
+		07A5A23F1DCBB0CA00A8B196 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		07A5A2431DCBECEE00A8B196 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		07D297191DE78C87008A6652 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		18C73BA9F0B064EC3A9429BC /* Pods-App_Medica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_Medica.release.xcconfig"; path = "Pods/Target Support Files/Pods-App_Medica/Pods-App_Medica.release.xcconfig"; sourceTree = "<group>"; };
+		4347B80D1DDA960B00DE670C /* BarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarChartViewController.swift; sourceTree = "<group>"; };
+		854EE667EAC6A0452468C79A /* Pods-App_Medica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App_Medica.debug.xcconfig"; path = "Pods/Target Support Files/Pods-App_Medica/Pods-App_Medica.debug.xcconfig"; sourceTree = "<group>"; };
+		CD96EB8A0391C724C16B0C49 /* Pods_App_Medica.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_Medica.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB138E4A1DB9461800AC275B /* App_Medica.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_Medica.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB138E4D1DB9461800AC275B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB138E4F1DB9461800AC275B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB138E521DB9461800AC275B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB138E541DB9461800AC275B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB138E571DB9461800AC275B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB138E591DB9461800AC275B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB138E5F1DB951D900AC275B /* StaticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticTableViewController.swift; sourceTree = "<group>"; };
+		FB138E611DB9550600AC275B /* HoraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoraViewController.swift; sourceTree = "<group>"; };
+		FB138E631DB960A700AC275B /* FotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FotosViewController.swift; sourceTree = "<group>"; };
+		FB138E651DB9841A00AC275B /* MedicinasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicinasTableViewController.swift; sourceTree = "<group>"; };
+		FB138E671DB9844600AC275B /* Medicinas.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medicinas.swift; sourceTree = "<group>"; };
+		FB138E691DB987C600AC275B /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		FB6DB01F1DCAA9A800325319 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FB6DB0221DCAB52700325319 /* App_Medica-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App_Medica-Bridging-Header.h"; sourceTree = "<group>"; };
+		FB6DB0231DCAB52800325319 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		FB6DB0241DCAB52800325319 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		FB716EFB1DDBBC360092F4F0 /* CreditosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditosViewController.swift; sourceTree = "<group>"; };
+		FB7EF0A81DE7BB8900B661C6 /* Paciente.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Paciente.swift; sourceTree = "<group>"; };
+		FB88C2D11DCBC51C0090419B /* GraphicsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicsViewController.swift; sourceTree = "<group>"; };
+		FB88C2D51DCBD75E0090419B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FBA967BE1DE51AFB00D33FD0 /* DoctorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoctorViewController.swift; sourceTree = "<group>"; };
+		FBA967C21DE5205100D33FD0 /* ResponsableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponsableViewController.swift; sourceTree = "<group>"; };
+		FBC9E1CB1DDBAE09008FA844 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		FBE3EBB01DCBF38400FF6095 /* TableViewControllerUserInfromation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerUserInfromation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB138E471DB9461800AC275B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBC9E1D71DDBAE15008FA844 /* Charts.framework in Frameworks */,
+				07D83BB03C989572C55E0DA9 /* Pods_App_Medica.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70CEC8F4E592C22C718D7D4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				854EE667EAC6A0452468C79A /* Pods-App_Medica.debug.xcconfig */,
+				18C73BA9F0B064EC3A9429BC /* Pods-App_Medica.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F850635386B7C9749D72329C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD96EB8A0391C724C16B0C49 /* Pods_App_Medica.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB138E411DB9461800AC275B = {
+			isa = PBXGroup;
+			children = (
+				FBC9E1CB1DDBAE09008FA844 /* Charts.xcodeproj */,
+				FB138E4C1DB9461800AC275B /* App_Medica */,
+				FB138E4B1DB9461800AC275B /* Products */,
+				70CEC8F4E592C22C718D7D4D /* Pods */,
+				F850635386B7C9749D72329C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB138E4B1DB9461800AC275B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB138E4A1DB9461800AC275B /* App_Medica.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB138E4C1DB9461800AC275B /* App_Medica */ = {
+			isa = PBXGroup;
+			children = (
+				FB138E4D1DB9461800AC275B /* AppDelegate.swift */,
+				FB6DB01E1DCAA97D00325319 /* Controllers */,
+				FB138E511DB9461800AC275B /* Main.storyboard */,
+				FB138E541DB9461800AC275B /* Assets.xcassets */,
+				FB138E561DB9461800AC275B /* LaunchScreen.storyboard */,
+				FB138E591DB9461800AC275B /* Info.plist */,
+				07D297191DE78C87008A6652 /* GoogleService-Info.plist */,
+			);
+			path = App_Medica;
+			sourceTree = "<group>";
+		};
+		FB6DB01E1DCAA97D00325319 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB6DB0211DCAB50200325319 /* swRealV */,
+				FB138E4F1DB9461800AC275B /* ViewController.swift */,
+				FB138E611DB9550600AC275B /* HoraViewController.swift */,
+				FB138E631DB960A700AC275B /* FotosViewController.swift */,
+				FB138E5F1DB951D900AC275B /* StaticTableViewController.swift */,
+				FB138E651DB9841A00AC275B /* MedicinasTableViewController.swift */,
+				FB138E691DB987C600AC275B /* MyCell.swift */,
+				FB138E671DB9844600AC275B /* Medicinas.swift */,
+				FB6DB01F1DCAA9A800325319 /* DetailViewController.swift */,
+				FB88C2D11DCBC51C0090419B /* GraphicsViewController.swift */,
+				07A5A23F1DCBB0CA00A8B196 /* ProfileViewController.swift */,
+				FB88C2D51DCBD75E0090419B /* RegisterViewController.swift */,
+				FB7EF0A81DE7BB8900B661C6 /* Paciente.swift */,
+				07A5A2431DCBECEE00A8B196 /* UserViewController.swift */,
+				FBE3EBB01DCBF38400FF6095 /* TableViewControllerUserInfromation.swift */,
+				4347B80D1DDA960B00DE670C /* BarChartViewController.swift */,
+				FB716EFB1DDBBC360092F4F0 /* CreditosViewController.swift */,
+				FBA967BE1DE51AFB00D33FD0 /* DoctorViewController.swift */,
+				FBA967C21DE5205100D33FD0 /* ResponsableViewController.swift */,
+				07986A291DECBAAF00C6D439 /* HistorialCell.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FB6DB0211DCAB50200325319 /* swRealV */ = {
+			isa = PBXGroup;
+			children = (
+				FB6DB0231DCAB52800325319 /* SWRevealViewController.h */,
+				FB6DB0241DCAB52800325319 /* SWRevealViewController.m */,
+				FB6DB0221DCAB52700325319 /* App_Medica-Bridging-Header.h */,
+			);
+			name = swRealV;
+			sourceTree = "<group>";
+		};
+		FBC9E1CC1DDBAE09008FA844 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBC9E1D21DDBAE0A008FA844 /* Charts.framework */,
+				FBC9E1D41DDBAE0A008FA844 /* ChartsRealm.framework */,
+				FBC9E1D61DDBAE0A008FA844 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB138E491DB9461800AC275B /* App_Medica */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB138E5C1DB9461800AC275B /* Build configuration list for PBXNativeTarget "App_Medica" */;
+			buildPhases = (
+				0AC950BE83EA875981AA424B /* [CP] Check Pods Manifest.lock */,
+				FB138E461DB9461800AC275B /* Sources */,
+				FB138E471DB9461800AC275B /* Frameworks */,
+				FB138E481DB9461800AC275B /* Resources */,
+				4347B80C1DDA94D200DE670C /* Embed Frameworks */,
+				67E0BD82A09B5B2252925D66 /* [CP] Embed Pods Frameworks */,
+				96FB92FA6992938206CAE058 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBC9E1DA1DDBAE15008FA844 /* PBXTargetDependency */,
+			);
+			name = App_Medica;
+			productName = App_Medica;
+			productReference = FB138E4A1DB9461800AC275B /* App_Medica.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB138E421DB9461800AC275B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = 815968;
+				TargetAttributes = {
+					FB138E491DB9461800AC275B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UBP5PEYJ2Z;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FB138E451DB9461800AC275B /* Build configuration list for PBXProject "App_Medica" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB138E411DB9461800AC275B;
+			productRefGroup = FB138E4B1DB9461800AC275B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FBC9E1CC1DDBAE09008FA844 /* Products */;
+					ProjectRef = FBC9E1CB1DDBAE09008FA844 /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FB138E491DB9461800AC275B /* App_Medica */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FBC9E1D21DDBAE0A008FA844 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = FBC9E1D11DDBAE0A008FA844 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FBC9E1D41DDBAE0A008FA844 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = FBC9E1D31DDBAE0A008FA844 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FBC9E1D61DDBAE0A008FA844 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = FBC9E1D51DDBAE0A008FA844 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB138E481DB9461800AC275B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB138E581DB9461800AC275B /* LaunchScreen.storyboard in Resources */,
+				07D2971A1DE78C87008A6652 /* GoogleService-Info.plist in Resources */,
+				FB138E551DB9461800AC275B /* Assets.xcassets in Resources */,
+				FB138E531DB9461800AC275B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC950BE83EA875981AA424B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		67E0BD82A09B5B2252925D66 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App_Medica/Pods-App_Medica-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96FB92FA6992938206CAE058 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App_Medica/Pods-App_Medica-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB138E461DB9461800AC275B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB6DB0201DCAA9A800325319 /* DetailViewController.swift in Sources */,
+				FB138E621DB9550600AC275B /* HoraViewController.swift in Sources */,
+				FB138E661DB9841A00AC275B /* MedicinasTableViewController.swift in Sources */,
+				FB138E501DB9461800AC275B /* ViewController.swift in Sources */,
+				FB716EFC1DDBBC360092F4F0 /* CreditosViewController.swift in Sources */,
+				FB7EF0A91DE7BB8900B661C6 /* Paciente.swift in Sources */,
+				FB138E681DB9844600AC275B /* Medicinas.swift in Sources */,
+				FB138E601DB951D900AC275B /* StaticTableViewController.swift in Sources */,
+				07A5A2401DCBB0CA00A8B196 /* ProfileViewController.swift in Sources */,
+				07A5A2441DCBECEE00A8B196 /* UserViewController.swift in Sources */,
+				FBE3EBB11DCBF38400FF6095 /* TableViewControllerUserInfromation.swift in Sources */,
+				FB138E6A1DB987C600AC275B /* MyCell.swift in Sources */,
+				FBA967BF1DE51AFB00D33FD0 /* DoctorViewController.swift in Sources */,
+				FB6DB0251DCAB52800325319 /* SWRevealViewController.m in Sources */,
+				FB138E4E1DB9461800AC275B /* AppDelegate.swift in Sources */,
+				FB88C2D61DCBD75E0090419B /* RegisterViewController.swift in Sources */,
+				4347B80E1DDA960B00DE670C /* BarChartViewController.swift in Sources */,
+				FBA967C31DE5205100D33FD0 /* ResponsableViewController.swift in Sources */,
+				07986A2A1DECBAAF00C6D439 /* HistorialCell.swift in Sources */,
+				FB138E641DB960A700AC275B /* FotosViewController.swift in Sources */,
+				FB88C2D21DCBC51C0090419B /* GraphicsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBC9E1DA1DDBAE15008FA844 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = FBC9E1D91DDBAE15008FA844 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB138E511DB9461800AC275B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB138E521DB9461800AC275B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB138E561DB9461800AC275B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB138E571DB9461800AC275B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB138E5A1DB9461800AC275B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB138E5B1DB9461800AC275B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB138E5D1DB9461800AC275B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 854EE667EAC6A0452468C79A /* Pods-App_Medica.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = UBP5PEYJ2Z;
+				INFOPLIST_FILE = App_Medica/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-15968.App-Medica";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "App_Medica/App_Medica-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FB138E5E1DB9461800AC275B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C73BA9F0B064EC3A9429BC /* Pods-App_Medica.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = UBP5PEYJ2Z;
+				INFOPLIST_FILE = App_Medica/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-15968.App-Medica";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "App_Medica/App_Medica-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB138E451DB9461800AC275B /* Build configuration list for PBXProject "App_Medica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB138E5A1DB9461800AC275B /* Debug */,
+				FB138E5B1DB9461800AC275B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB138E5C1DB9461800AC275B /* Build configuration list for PBXNativeTarget "App_Medica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB138E5D1DB9461800AC275B /* Debug */,
+				FB138E5E1DB9461800AC275B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB138E421DB9461800AC275B /* Project object */;
+}
