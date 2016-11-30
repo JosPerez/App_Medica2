@@ -53,9 +53,9 @@ class StaticTableViewController: UITableViewController {
             content.title = "Meidicina Agregada"
             content.body = nombre + " ha sido asignada"
             content.sound = .default()
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
             
-            
-            let request = UNNotificationRequest(identifier: "Creada", content: content, trigger: nil)
+            let request = UNNotificationRequest(identifier: "Creada", content: content, trigger: trigger)
             
             UNUserNotificationCenter.current().add(request, withCompletionHandler: {
                 error in

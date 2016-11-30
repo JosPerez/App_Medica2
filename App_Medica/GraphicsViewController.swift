@@ -51,7 +51,7 @@ class GraphicsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! HistorialCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "histCell", for: indexPath) as! HistorialCell
         
         cell.nombre.text = taken[indexPath.row].nombre
         let formatter = DateFormatter()
@@ -60,8 +60,10 @@ class GraphicsViewController: UITableViewController {
         
         cell.hora.text = formatter.string(from: taken[indexPath.row].hora as Date)
         cell.medImagen.image = taken[indexPath.row].image
-        if !taken[indexPath.row].tomada {
+        if taken[indexPath.row].tomada == true {
             
+            cell.nombre.tintColor = UIColor.black
+        }else {
             cell.nombre.tintColor = UIColor.red
         }
         

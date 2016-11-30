@@ -15,7 +15,7 @@ struct tomadas {
     var tomada:Bool!
     var image:UIImage!
 }
-var taken:[tomadas]!
+var taken = [tomadas]()
 
 class MedicinasTableViewController: UITableViewController,ProtocolAgregarMedicinas,UNUserNotificationCenterDelegate {
     @IBOutlet weak var menuButton: UIBarButtonItem!
@@ -122,10 +122,9 @@ class MedicinasTableViewController: UITableViewController,ProtocolAgregarMedicin
         content.sound = .default()
         content.categoryIdentifier = "myCategory"
         
-        let index = String(describing: tableView.indexPathForSelectedRow?.row)
-        
+        let str = String(medicina.count)
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: intervalo, repeats: true)
-        let request = UNNotificationRequest(identifier: index, content: content, trigger: trigger)
+        let request = UNNotificationRequest(identifier: str, content: content, trigger: trigger)
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: {
             error in
@@ -153,31 +152,31 @@ class MedicinasTableViewController: UITableViewController,ProtocolAgregarMedicin
     // MARK: - Notificacion
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
-        let medId = Int(response.notification.request.identifier)
+        
         
         if response.actionIdentifier == "tomar" {
-            
+            let medId = Int(response.notification.request.identifier)! - 1
         
-            print(medicina[medId!].CantidadCaja)
-            medicina[medId!].CantidadCaja = medicina[medId!].CantidadCaja - medicina[medId!].CantidadToma
-            print(medicina[medId!].CantidadCaja)
+            print(medicina[medId].CantidadCaja)
+            medicina[medId].CantidadCaja = medicina[medId].CantidadCaja - medicina[medId].CantidadToma
+            print(medicina[medId].CantidadCaja)
             
-            var take:tomadas!
-            take.nombre = medicina[medId!].nombre
+            var take = tomadas()
+            take.nombre = medicina[medId].nombre
             take.hora = response.notification.date as NSDate
             take.tomada = true
-            take.image = medicina[medId!].image
+            take.image = medicina[medId].image
             taken.append(take)
             tableView.reloadData()
             
             
         }else if response.actionIdentifier == "no-tomar" {
-            
-            var take:tomadas!
-            take.nombre = medicina[medId!].nombre
+            let medId = Int(response.notification.request.identifier)! - 1
+            var take = tomadas()
+            take.nombre = medicina[medId].nombre
             take.hora = response.notification.date as NSDate
             take.tomada = true
-            take.image = medicina[medId!].image
+            take.image = medicina[medId].image
             taken.append(take)
             
         }else  {
